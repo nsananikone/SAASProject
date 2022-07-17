@@ -1,0 +1,251 @@
+@media screen and (max-width: 375px) {
+    
+    [aria-controls="navbarDropdown"] {
+        display: block;
+    }
+
+    [aria-expanded="false"] ~ ul {
+        display: none;
+    }
+
+    [aria-expanded="true"] ~ ul {
+        display: flex;
+    }
+
+    .container.navbar {
+        flex-direction: row-reverse;
+    }
+
+    .navbar-section {
+        position: static;
+    }
+
+    .navbar-toggler span {
+        pointer-events: none;
+    }
+
+    .nav-links {
+        position: absolute;
+        top: 10%;
+        right: 0%;
+        z-index: 500;
+        width: 100%;
+        flex-wrap: wrap;
+        margin-top: var(--size-18);
+    }
+
+    .nav-links li:last-child {
+        margin: 0 auto;
+        margin-top: var(--size-20);
+        font-size: var(--size-10);
+    }
+
+    
+    .logo-icon.google-icon {
+        top: 111%;
+        right: 65%;
+     
+    }
+    
+    .logo-icon.atlassian-icon {
+        top: 119%;
+        right: 47%;
+        width: 68px;
+    }
+    
+    .logo-icon.asana-icon {
+        top: 112%;
+        right: 18%;
+        width: 68px;
+    }
+    
+    .logo-icon.paypal-icon {
+        top: 142%;
+        right: 70%;
+        width: 68px;
+    }
+    
+    .logo-icon.weave-icon {
+        top: 139%;
+        right: 30%;
+        width: 68px;
+    }
+    
+    .logo-icon.google-ads-icon {
+        display: none;
+    }
+    
+    .logo-icon.calendar-icon {
+       display: none;
+    }
+
+    .block-text h1 {
+        font-size: var(--size-40);
+    }
+
+
+    .key-benefits-section {
+        margin-top: 275px;
+    }
+
+    .key-benefits-flex {
+        flex-direction: column;
+        align-items: initial;
+        margin-top: 0;
+    }
+
+    .benefit-card {
+        margin: var(--size-14) 0;
+    }
+
+    .get-started-flex {
+        display: inline-block;
+    }
+
+    .get-started-header h2 {
+        font-size: 25px;
+    }
+
+    .why-font-section {
+        margin-top: var(--size-50);
+    }
+
+    .circle-container {
+        flex-direction: column;
+        margin-top: var(--size-40);
+        margin-left: var(--size-10);
+    }
+
+    .circle-flex {
+        flex-direction: row;
+        justify-content: left;
+    }
+
+    .line {
+        border-left: 2px solid #B0E0E6;
+        height: var(--size-16);
+        flex: none;
+        border-bottom: none;
+        border-right: none;
+        border-top: none;
+        margin: var(--size-14) 25px;
+        
+    }
+
+    .circle-flex p {
+        margin-left: var(--size-10);
+    }
+
+    .testimonial .woman-pic {
+        position: initial;
+    }
+
+    .testimonial-paragraph {
+        position: initial;
+        margin-top: var(--size-50);
+    }
+
+    .testimonial-paragraph p {
+        font-size: var(--size-18);
+    }
+
+    .testimonial .icon-dots {
+        top: 3%;
+        left: -12%;
+        z-index: -1;
+    }
+
+    .company-logos {
+        margin-top: 235px;
+    }
+
+    .uber-logo,
+    .weebly-logo {
+        display: none;
+    }
+
+    .pricing-header {
+        margin: 0 auto;
+    }
+
+    .pricing-grid {
+        gap: var(--size-50) var(--size-100);
+    }
+
+    .hire-us-flex {
+        flex-direction: column;
+    }
+
+    .hire-us-block {
+        padding: 0;
+    }
+
+    .hire-us-form {
+        margin: var(--size-50) 0;
+    }
+
+    .centered-inputs input,
+    .centered-inputs select {
+        width: 100%;
+        margin: 0 auto var(--size-14);
+    }
+
+    .checkbox-label {
+        font-size: var(--size-10);
+    }
+    
+    .footer-flex {
+        flex-wrap: wrap;
+        justify-content: start;
+    }
+
+    .col1 {
+        margin-bottom: var(--size-20);
+    }
+
+    .col3 {
+        margin-left: var(--size-40);
+    }
+
+    .col4 {
+        margin-top: var(--size-20);
+    }
+
+    .col5 {
+        margin-left: 66px;
+    }
+
+    .copyright-flex {
+        display: grid;
+    }
+    
+}
+
+@media screen and (max-width: 768px) {
+    .key-benefits-flex {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+        gap: var(--size-20);
+    }
+
+    .testimonial-paragraph {
+        top: 44%;
+        right: 3%;
+        
+    }
+
+    .testimonial-paragraph p {
+        font-size: var(--size-14);
+    }
+
+    .centered-inputs input,
+    .centered-inputs select {
+        width: 100%;
+        margin: var(--size-10) auto;
+    }
+
+    .footer-flex {
+        flex-wrap: wrap;
+        margin: 0 var(--size-10);
+    }
+}
